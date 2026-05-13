@@ -33,7 +33,7 @@ This is a beginner-friendly web development project that allows two players to p
 This project was built as a practice project to improve my front-end development skills and understand basic JavaScript logic and DOM manipulation.
 
 ## 📸 Preview
-(Add a screenshot here later if you want)
+![Game Screenshot](tic-tac-toe_screenshot.png)
 
 ## 📌 Future Improvements
 - Add AI opponent 🤖  
