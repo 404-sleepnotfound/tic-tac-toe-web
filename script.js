@@ -168,30 +168,27 @@ function drawWinningLine(pattern) {
     const board = document.querySelector('.board');
 
     const line = document.createElement('div');
-
     line.classList.add('line');
 
     board.appendChild(line);
 
     const positions = {
         // Horizontal
-        "0,1,2": { top: 52, left: 0, width: 350, rotate: 0 },
-        "3,4,5": { top: 167, left: 0, width: 350, rotate: 0 },
-        "6,7,8": { top: 282, left: 0, width: 350, rotate: 0 },
+        "0,1,2": { top: 55, left: 10, width: 330, rotate: 0 },
+        "3,4,5": { top: 170, left: 10, width: 330, rotate: 0 },
+        "6,7,8": { top: 285, left: 10, width: 330, rotate: 0 },
 
         // Vertical
-        "0,3,6": { top: 0, left: 52, width: 350, rotate: 90 },
-        "1,4,7": { top: 0, left: 167, width: 350, rotate: 90 },
-        "2,5,8": { top: 0, left: 282, width: 350, rotate: 90 },
+        "0,3,6": { top: 10, left: 55, width: 330, rotate: 90 },
+        "1,4,7": { top: 10, left: 170, width: 330, rotate: 90 },
+        "2,5,8": { top: 10, left: 285, width: 330, rotate: 90 },
 
         // Diagonal
-        "0,4,8": { top: 0, left: 5, width: 485, rotate: 45 },
-        "2,4,6": { top: 0, left: 345, width: 485, rotate: 135 }
+        "0,4,8": { top: 8, left: 8, width: 460, rotate: 45 },
+        "2,4,6": { top: 8, left: 338, width: 460, rotate: 135 }
     };
 
-    const key = pattern.toString();
-
-    const pos = positions[key];
+    const pos = positions[pattern.toString()];
 
     line.style.width = `${pos.width}px`;
     line.style.top = `${pos.top}px`;
